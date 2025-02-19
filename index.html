@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3rd Sem VTU SGPA Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>3rd Sem VTU SGPA Calculator</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Course Code</th>
+          <th>Course Title</th>
+          <th>Credits</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody id="course-table">
+        <tr>
+          <td>BCS301</td>
+          <td>Mathematics for Computer Science</td>
+          <td>4</td>
+          <td><input type="text" maxlength="3" id="grade-BCS301"></td>
+        </tr>
+        <tr>
+          <td>BCS302</td>
+          <td>Digital Design & Computer Organization</td>
+          <td>4</td>
+          <td><input type="text" maxlength="3" id="grade-BCS302"></td>
+        </tr>
+        <tr>
+          <td>BCS303</td>
+          <td>Operating Systems</td>
+          <td>4</td>
+          <td><input type="text" maxlength="3" id="grade-BCS303"></td>
+        </tr>
+        <tr>
+          <td>BCS304</td>
+          <td>Data Structures and Applications</td>
+          <td>4</td>
+          <td><input type="text" maxlength="3" id="grade-BCS304"></td>
+        </tr>
+        <tr>
+          <td>BCSL305</td>
+          <td>Data Structures Lab</td>
+          <td>1</td>
+          <td><input type="text" maxlength="3" id="grade-BCSL305"></td>
+        </tr>
+        <tr>
+          <td>BCS306</td>
+          <td>ESC/ETC/PLC</td>
+          <td>3</td>
+          <td><input type="text" maxlength="3" id="grade-BCS306"></td>
+        </tr>
+        <tr>
+          <td>BCSK307</td>
+          <td>Social Connect and Responsibility</td>
+          <td>1</td>
+          <td><input type="text" maxlength="3" id="grade-BCSK307"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button onclick="calculateSGPA()">Calculate SGPA</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
